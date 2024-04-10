@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat' ;
+    
+
+}
+
+html, body{
+    width: 100%;
+       /* perspective: 100%;  */
+    height: 100%;
+ }
+
+
+ #main{
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+ }
+
+ /* NAV - BAR */
+
+ #nav{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7vw;
+    color: #ffff;
+    width: 100vw;
+    height: 10vh;
+    font-weight: 800;
+    font-size: 16px;
+
+    /* background-color: red; */
+ }
+
+     /*  H1  */
+ #nav a{
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+ }
+
+     /* SREACH LOGO */
+ #nav a i {
+    margin-right: 10px;
+ }
+
+
+/* H1 CENTER */
+ #ncenter{
+   display: flex;
+   align-items: center;
+   gap: 30px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+ }
+
+
+ /* all center a tag */
+ #ncenter a{
+   white-space: nowrap; /* this make 2 line word in one line */
+   font-weight: 800;
+   font-size: 16px;
+ }
+
+/* center logo */
+ #ncenter #logo {
+   display: flex;
+   align-items: center;
+   
+ }
+
+/* cneter logo image */
+ #ncenter #logo img{
+   width: 120px;
+   margin: 0 20px;
+   
+   
+ }
+
+ /* CENTER LOGO 2 LINE */
+ #ncenter #logo .line{
+
+   width: 130px;
+   height: 2px;
+   background-color: rgb(141, 49, 49);
+ }
+
+ #hero{
+   display: flex;
+   
+    width: 100%;
+    min-height: 90vh;
+    /* background-color: red; */
+ }
+
+ /* ------------------------------------------------------------------------------------------------ */
+
+ #left{
+   display: flex ;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: center;
+   width: calc(100%/3);
+   min-height: inherit;
+   padding: 0 3vw;
+   color: #ffff;
+ }
+
+ #left h1{
+   line-height: 1;  /* it make space between into to line */
+   font-size: 3vw;
+   margin-bottom: 1vw;
+ }
+
+ #left h1 span{
+   font-weight: 300;
+   color: red;
+ }
+
+ #left p{
+   width: 80%;
+
+ }
+
+ #left button{
+   display: flex;
+   align-items: center;
+   /* margin-top: 20px; */
+   border: none;
+   outline: none;
+   border-radius: 100px;
+   padding: 15px 32px ;
+   font-size: 16px;
+   font-weight: 800;
+   text-transform: capitalize; /* this make first letter of word is capital by using this*/
+   color: #ffff;
+   background-color: rgb(195, 17, 17);
+ }
+
+ #left button i{
+   
+   margin-right: 10px;
+ }
+
+ #left #btn{
+   margin-top:  20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+ }
+
+ #left #btn>i{
+ margin-left: 30px;   
+   color: red
+ }
+
+ #center{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: calc(100%/3);
+   min-height: inherit;
+   /* background-color: blueviolet; */
+ }
+
+ /* ------------------------------------------------------------------------------------------------------- */
+
+ #center #tomb{
+   position: relative;
+   width: 70%;
+   min-height: 70vh;
+   border-top-left-radius: 500px;
+   border-top-right-radius: 500px;
+   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8lppoe4vhhCqxchLU2XjA0IHhXYso0ctMAQ&usqp=CAU);
+   background-size: cover;
+}
+/* 
+#tomb img{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  height: 85vh;
+} */
+
+#tomb #capsule{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   color: white;
+   position: absolute;
+   right: -25%;
+   top: 30%;
+   width: 50%;
+   height: 3.2vw;
+   padding: 0 25px 0  5px;
+   border-radius: 100px;
+   background-color: #333;
+   
+}
+
+#tomb #photo{
+  width:2.8vw ;
+  height: 2.8vw;
+  border-radius: 50%;
+  overflow: hidden; 
+  background-image:url(https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs2/161247719/original/8ba99caf98b658193b418f8b7e5fa0e3119a228b/draw-a-cartoon-profile-picture.png);
+  background-size: cover;
+  background-position: center;
+  /* white-space: nowrap; this make 2 line word in one line */
+}
+#tomb #textcap h5{
+
+}
+
+#tomb #textcap h6{
+
+  color: #CCCAC6;
+}
+
+/* ------------------------------------------------------------------------------------------------- */
+
+ #right{
+  position: relative;
+   width: calc(100%/3);
+   min-height: inherit;
+   /* background-color: green; */
+ }
+
+ #rbottom{
+     padding: 0 5vw;
+     position: absolute;
+     bottom: 10vh;
+     
+     width: 80%;
+   /* background-color: red; */
+ }
+
+ #rbottom .row{
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      opacity: 0.5;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #444;
+ }
+
+ #rbottom .row:nth-child(3) {
+  opacity: 1;
+  border-bottom: initial;
+ }
+
+#rbottom p{
+  color: white;
+  width: 80%;
+  font-size: 12px;
+}
+
+
+@media(max-width: 500px){
+
+  /* #nav{
+    display: flex;
+    align-items: center;
+  
+  } */
+  #nav #ncenter a {
+    display: none;
+  }
+
+  #nav #ncenter .line{
+    width: 30px;
+     /* display: none; */
+  }
+  
+  #ncenter {
+    left: 56%;
+  }
+
+  #nav #ncenter img {
+    width: 100px;
+    
+    
+  }
+
+  #hero {
+    flex-direction: column;
+  }
+
+#hero #left{
+  width: 100%;
+   padding: 10vw 6vw;  /* padding = top-bottom(10vw) left-right (0)  */
+  min-height: initial;
+
+}
+
+#hero #left h1{
+  font-size: 9vw;
+}
+
+#hero #left p{
+
+  margin-top: 20px;
+  /* margin-bottom: 20px; */
+
+}
+
+#center{
+  width: 100%;
+  min-height: 60vh;
+}
+
+#center #tomb{
+  width: 65%;
+  min-height: 60vh;
+  
+}
+
+#tomb #capsule{
+  width: 49vw;
+  height: 4.2vh;
+  padding: 0 3px 0 5px;
+  top: 20%;
+}
+
+#tomb #photo{
+  width: 9.8vw;
+    height: 9.8vw;
+}
+  
+#capsule #textcap{
+  white-space: nowrap; /* this make 2 line word in one line */
+  line-height: 1.4;  /* it make space between into to line */
+
+}
+
+#right {
+ margin-bottom: 20px;
+  width: 100%;
+  margin-top: 20vw;
+  min-height: initial;
+
+}
+
+#rbottom {
+  width: 100%;
+  position: static;
+  bottom: initial;
+}
+}
